@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(int argc, char **argv) {
+    int a;
+    int b;
+    int c=0;
+    int x=0;
+    int y=0;
+    scanf("%d %d",&a,&b);
+    
+    x=a/100;
+    a=a%100;
+    b=a+b;
+    x=x+b/60;
+    b=b%60;
+
+    c=x*100+b;
+    printf("%04d\n",c);
+    return 0;
+}
