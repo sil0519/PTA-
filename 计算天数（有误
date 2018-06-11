@@ -1,0 +1,59 @@
+#include <stdio.h>  
+int main()  
+{   
+    int yyyy;
+    int mm;
+    int dd;
+    scanf("%d/%d/%d",&yyyy,&mm,&dd);
+    int run=0;
+    int days=0;
+    
+    if(((yyyy%2)==0)&&((yyyy%100)==0)){
+        run=1;
+    }
+    
+    days=dd;
+    
+    if(1<mm){
+        days=days+31;
+    }
+    if(2<mm){
+        days=days+28;
+    }
+    if(3<mm){
+        days=days+31;
+    }
+    if(4<mm){
+        days=days+30;
+    }
+    if(5<mm){
+        days=days+31;
+    }
+    if(6<mm){
+        days=days+30;
+    }
+    if(7<mm){
+        days=days+31;
+    }
+    if(8<mm){
+        days=days+31;
+    }
+    if(9<mm){
+        days=days+30;
+    }
+    if(10<mm){
+        days=days+31;
+    }
+    if(11<mm){
+        days=days+30;
+    }
+    if(12<mm){
+        days=days+31;
+    }
+    
+    if(run==1){
+        days=days+1;
+    }
+    printf("%d",days);
+    return 0;  
+}
